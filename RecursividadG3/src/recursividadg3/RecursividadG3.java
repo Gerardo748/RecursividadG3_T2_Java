@@ -8,13 +8,20 @@ package recursividadg3;
  *
  * @author rodri
  */
+
 public class RecursividadG3 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
     }
-    
+
+    public static void main(String[] args) {
+        int numero = 5;
+
+        System.out.println("Factorial de " + numero + ": " + factorial(numero));
+    }
 }
